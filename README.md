@@ -1,4 +1,9 @@
+clj-meetup
+==========
+
 A Clojure library for the meetup.com API
+
+[![Clojars Project](http://clojars.org/clj-meetup/latest-version.svg)](http://clojars.org/clj-meetup)
 
 ## Usage
 
