@@ -4,6 +4,6 @@
   :license {:name "The MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-				 [http-kit "2.1.16"]
-				 [cheshire "5.3.1"]
-				 [environ/environ.core "0.3.1"]])
+                 [http-kit "2.1.16"]
+                 [cheshire "5.3.1"]
+                 [environ/environ.core "0.3.1"]])
