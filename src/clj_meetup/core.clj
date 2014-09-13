@@ -1,7 +1,6 @@
 (ns clj-meetup.core
   (:require [org.httpkit.client :as http]
-            [cheshire.core :as json]
-            [environ.core :refer [env]]))
+            [cheshire.core :as json]))
 
 (def base-url "http://api.meetup.com")
 
@@ -11,7 +10,7 @@
                   :status "status"})
 
 (def api-key
-  (env :meetup-api-key))
+  (get (System/getenv) "MEETUP_API_KEY" ""))
 
 (defn build-api-request
   "Builds a request URL for the meetup API"
