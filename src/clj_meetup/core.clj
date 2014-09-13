@@ -5,17 +5,28 @@
 
 (def base-url "http://api.meetup.com")
 
+(def method-urls {;; groups
+                  :group-info "2/groups.json"
+                  ;; status
+                  :status "status"})
+
 (def api-key
   (env :meetup-api-key))
 
 (defn build-api-request
   "Builds a request URL for the meetup API"
-  [api-method args]
-  {:url (format
-         "%s/%s.json/"
-         base-url
-         api-method)
-   :params args})
+  ([api-method]
+   {:url (format
+          "%s/%s/"
+          base-url
+          api-method)
+    :params {}})
+  ([api-method args]
+   {:url (format
+          "%s/%s/"
+          base-url
+          api-method)
+    :params args}))
 
 (defn request
   "Make an API request for a given method and arguments"
