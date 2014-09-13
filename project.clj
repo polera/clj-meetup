@@ -1,4 +1,4 @@
-(defproject clj-meetup "0.1.0"
+(defproject clj-meetup "0.5.2"
   :description "A Clojure library for the meetup.com API"
   :url "https://github.com/polera/clj-meetup"
   :license {:name "The MIT License"
